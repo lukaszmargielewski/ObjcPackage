@@ -12,6 +12,6 @@ class ObjcPackageTests: XCTestCase {
 
     func testInternal() {
         // How to expose internal Objective-C header to the test package, without making it public?
-        //XCTAssertEqual(objcPackage.generateInternalSecret, "A_internal_secret")
+        XCTAssertEqual(objcPackage?.generateInternalSecret(), "A_internal_secret")
     }
 }
