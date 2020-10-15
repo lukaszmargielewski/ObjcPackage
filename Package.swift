@@ -10,7 +10,6 @@ let package = Package(
     products: [
         .library(name: "ObjcPackage", targets: ["ObjcPackage"]),
     ],
-    dependencies: [],
     targets: [
         .target(
             name: "ObjcPackage",
@@ -27,7 +26,7 @@ let package = Package(
             path: "ObjcPackageTests",
             sources: ["Source"],
             cSettings: [
-                .headerSearchPath("../ObjcPackage/Source/Internal"),
+                .headerSearchPath("../ObjcPackage/Source/Internal")
             ]
         )
     ]
