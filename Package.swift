@@ -26,7 +26,7 @@ let package = Package(
             path: "ObjcPackageTests",
             sources: ["Source"],
             cSettings: [
-                .headerSearchPath("../ObjcPackage/Source/Internal")
+                .headerSearchPath("../ObjcPackage/Source/Internal") // Does not help
             ]
         )
     ]
